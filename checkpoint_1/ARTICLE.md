@@ -1,5 +1,10 @@
 # Título
 
+# Integrantes
+
+## - Enzo Vasconcelos de Oliveira Santos RM550702
+## - Felipe Hideki Iwasa RM98323
+
 ## Seção 1 - Introdução
 ## Seção 2 - Fundamentos
 ## Seção 3 - Metodologia
