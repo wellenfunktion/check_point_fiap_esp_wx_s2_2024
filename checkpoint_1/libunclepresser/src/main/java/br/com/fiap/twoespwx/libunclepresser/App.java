@@ -11,10 +11,6 @@
 
 package br.com.fiap.twoespwx.libunclepresser;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-
 public class App 
 {
     public static void main( String[] args )
