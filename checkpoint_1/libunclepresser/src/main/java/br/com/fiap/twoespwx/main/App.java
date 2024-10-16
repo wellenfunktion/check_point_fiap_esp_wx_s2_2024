@@ -9,7 +9,7 @@
  *      - Felipe Hideki Iwasa - RM98323
  */
 
-package br.com.fiap.twoespwx.libunclepresser;
+package br.com.fiap.twoespwx.main;
 
 // public class App 
 // {
@@ -83,7 +83,7 @@ public class App {
         System.out.println("\n\n------------------------------------");
 
         // Caminho do arquivo de entrada.
-        String filePath = "caminho/para/o/arquivo/de/entrada.txt";
+        String filePath = "check_point_fiap_esp_wx_s2_2024\\checkpoint_1\\libunclepresser\\inputs\\input1.txt";
         String result = nucleotidioSequenceProcesser(filePath); 
         System.out.println(result);
     }
