@@ -13,6 +13,7 @@ package br.com.fiap.twoespwx.main;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class App {
@@ -22,11 +23,18 @@ public class App {
         System.out.println("\n\n------------------------------------");
 
         // Caminho do arquivo de entrada.
-        String filePath = "check_point_fiap_esp_wx_s2_2024\\checkpoint_1\\libunclepresser\\inputs\\input1.txt";
-        String result = nucleotidioSequenceProcesser(filePath); 
-        System.out.println(result);
+        String inputPath = "check_point_fiap_esp_wx_s2_2024\\checkpoint_1\\libunclepresser\\inputs\\input.txt";
+        String outputPath = "check_point_fiap_esp_wx_s2_2024\\checkpoint_1\\libunclepresser\\outputs\\output.TXT";
+        String result = nucleotidioSequenceProcesser(inputPath); 
+       
+        try (FileWriter writer = new FileWriter(outputPath)) {
+            writer.write(result);
+            System.out.println("Resultado gravado com sucesso em: " + outputPath);
+        } catch (IOException e) {
+        System.err.println("Erro ao escrever no arquivo de saída: " + e.getMessage());
+        }
     }
-
+    
     // Processa a sequencia de nucleotideos.
     public static String nucleotidioSequenceProcesser(String filePath) {
         StringBuilder output = new StringBuilder(); // Cria um StringBuilder para armazenar a sequencia compr.
@@ -72,4 +80,6 @@ public class App {
         return compressed.toString(); // Retorna a sequencia comprimida e convertida para String.
     }
 }
+
+
 
