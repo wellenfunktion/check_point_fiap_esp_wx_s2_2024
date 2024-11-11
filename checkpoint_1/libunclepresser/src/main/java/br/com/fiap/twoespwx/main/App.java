@@ -37,7 +37,7 @@ public class App {
     
     // Processa a sequencia de nucleotideos.
     public static String nucleotidioSequenceProcesser(String filePath) {
-        StringBuilder output = new StringBuilder(); // Cria um StringBuilder para armazenar a sequencia compr.
+        StringBuilder output = new StringBuilder(); // Cria um StringBuilder para armazenar a sequencia comprimida.
         
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) { // Cria um BufferedReader para ler o arquivo.
             String line; // Cria uma variável para armazenar a linha atual.
